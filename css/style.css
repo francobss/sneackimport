@@ -84,91 +84,6 @@ header ul li:hover ul {
 .nav__label, .nav__input {
     display: none;
 }
-/*  
-.header { 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas:
-    "logo nav"
-    ;
-    background-color: rgb(0, 0, 0);
-}
-.logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-family: 'Pacifico', cursive;
-    color: rgb(23, 165, 137);
-    grid-area: logo;
-}
-.logo img {
-    height: 100px;
-    width: 100px;
-}
-.nav__container {
-    display: flex;
-    height: 100%;
-    width: 90%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-}
-.navegador{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 3px;
-    grid-area: nav;
-}
-.navegador__sub {
-    text-decoration: none;
-    list-style-type: none;
-    width: 100%;
-    padding: 0 20px;
-    font-family: 'Roboto';
-    color: rgb(253, 254, 254);
-}
-.navegador__tree {
-    text-decoration: none;
-    list-style-type: none;
-    font-family: 'Roboto';
-    background-color: rgb(23, 165, 137);
-    color: rgb(0, 0, 0);
-    display: block;
-    margin: 0%;
-    padding: 0 10px;
-    border-radius: 2px;
-    width: 90px;
-    text-align: center;
-}
-header ul ul {
-    display: none;
-    position: absolute;
-}
-header ul li:hover ul {
-    display: block;
-}
-.nav__item {
-    color: #fff;
-    text-decoration: none;
-    --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
-}
-.nav__item::after {
-    content: "";
-    display: block;
-    background: #fff;
-    width: 90%;
-    margin-top: 3px;
-    height: 3px;
-    clip-path: var(--clippy);
-    transition: clip-path .3s;
-}
-.nav__item:hover {
-    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-.nav__label, .nav__input {
-    display: none;
-}*/
 /* INDEX */
 /* CUERPO DE PAG */
 .cuerpoPadre {
@@ -225,6 +140,13 @@ section div :hover div{
 .img__genero {
     width: auto;
     height: auto;
+}
+.carouselPadre {
+    display: flex;
+    
+    justify-content: center;
+    height: 400px;
+    width: auto;
 }
 /* FIN CUERPO - INDEX */
 /* PIE DE PAGINA */
