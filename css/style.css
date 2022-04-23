@@ -267,7 +267,6 @@ section div :hover div{
 }
 .encuading {
     display: inline-block;
-    
     width: 200px;
     margin: 10px 10px 10px 10px;
     padding: 5px 5px 30px 5px;
@@ -314,7 +313,11 @@ section div :hover div{
     text-align: center;
     color: rgb(171, 178, 185);
 }
-
+.enlace {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
 @media (max-width: 1024px) {
     /*  */
     .cuerpoPadre {
