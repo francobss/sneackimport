@@ -152,7 +152,6 @@ section div :hover div{
 }
 .w-100 {
     padding: 0 10%;
-    height: 350px !important;
     width: 80% !important;
 }
 .carousel-item {
@@ -233,6 +232,16 @@ section div :hover div{
     font-family: 'Roboto';
     padding: 0 8px;
 }
+.footerimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerimg__en{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
 /* CUERPO - PRODUCTOS */
 .espacio {
     display: grid;
@@ -258,7 +267,7 @@ section div :hover div{
 }
 .encuading {
     display: inline-block;
-    height: 250px;
+    
     width: 200px;
     margin: 10px 10px 10px 10px;
     padding: 5px 5px 30px 5px;
@@ -305,6 +314,7 @@ section div :hover div{
     text-align: center;
     color: rgb(171, 178, 185);
 }
+
 @media (max-width: 1024px) {
     /*  */
     .cuerpoPadre {
@@ -354,6 +364,7 @@ section div :hover div{
         width: 980px;
     }
 }
+
 @media (max-width: 768px) {
     /* HEADER */
     .nav__label {
@@ -484,6 +495,7 @@ section div :hover div{
         width: 728px;
     }
 }
+
 @media only screen and (max-width: 480px) {
     /* HEADER */
     .nav__label {
