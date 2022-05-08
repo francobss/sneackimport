@@ -1,4 +1,579 @@
 @charset "UTF-8";
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* CUERPO DE PAG */
+.cuerpoPadre {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "Roboto";
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.divpadre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.encuadro {
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgb(174, 182, 191);
+  text-decoration: none;
+}
+.encuadro figure {
+  border-radius: 5px;
+  height: 300px;
+  width: 500px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+.encuadro figure img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.25s ease;
+}
+
+.encuadro img:hover {
+  transform: scale(1.5);
+}
+
+.encuadro:hover p {
+  color: rgb(253, 254, 254);
+}
+
+.parrafo {
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(253, 254, 254);
+}
+
+.titulogen {
+  text-align: center;
+  color: rgb(93, 109, 126);
+  font-family: "Roboto";
+}
+
+.carouselPadre {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: auto;
+}
+
+.w-100 {
+  padding: 0 10%;
+  width: 80% !important;
+}
+
+.carousel-item {
+  width: 70% !important;
+  padding-left: 400px !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(0,0,0)'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(0,0,0)'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+/* FIN CUERPO - INDEX */
+.generoHijo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.img__genero {
+  width: auto;
+  height: auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "logoF navF" "sectionF sectionF";
+  background-color: rgb(0, 0, 0);
+}
+
+.logoFooter {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  grid-area: logoF;
+  font-family: "Roboto";
+  color: rgb(23, 165, 137);
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.logoFooter img {
+  height: 100px;
+  width: 100px;
+}
+
+.navFooter {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  grid-area: navF;
+}
+
+.listaFooter {
+  display: flex;
+  flex-direction: row;
+}
+
+.enlaceFooter {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 20px;
+  font-family: "Roboto";
+  color: rgb(23, 165, 137);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sectionFooter {
+  grid-area: sectionF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img__wsp {
+  height: 30px;
+  width: 30px;
+  padding: 0 1rem;
+}
+
+.img__ig {
+  height: 45px;
+  width: 45px;
+  padding: 0 1rem;
+}
+
+.parrafoFooter {
+  color: rgb(23, 165, 137);
+  font-family: "Roboto";
+  padding: 0 8px;
+}
+
+.footerimg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerimg__en {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+
+@media (max-width: 1024px) {
+  /*  */
+  .cuerpoPadre {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-family: "Roboto";
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .divpadre {
+    display: flex;
+    row-gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .encuadro {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(174, 182, 191);
+    text-decoration: none;
+    border: none;
+  }
+
+  .encuadro img {
+    height: 300px;
+    width: 450px;
+  }
+
+  .encuadro:hover {
+    box-shadow: none;
+    display: block;
+    transform: none;
+  }
+
+  .genero {
+    justify-content: space-between;
+  }
+
+  .logoFooter, .navFooter {
+    justify-content: space-around;
+  }
+
+  .img__genero {
+    height: 200px;
+    width: 980px;
+  }
+}
+@media (max-width: 768px) {
+  /* HEADER */
+  .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav__menu {
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition: clip-path 1s ease-in-out;
+  }
+
+  .nav__item::after {
+    background: rgb(0, 0, 0);
+    clip-path: none;
+    transition: none;
+  }
+
+  .nav__item {
+    padding: 40px 0;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 900;
+    --clippy: none;
+  }
+
+  .nav__input:checked + .nav__menu {
+    clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
+  }
+
+  .nav__item__li {
+    color: rgb(23, 165, 137);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Roboto";
+    padding: 40px 0;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 900;
+  }
+
+  header ul ul {
+    display: block;
+  }
+
+  /* FOOTER */
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "logoF logoF" "navF navF" "sectionF sectionF";
+    background-color: rgb(0, 0, 0);
+  }
+
+  .logoFooter {
+    justify-content: center;
+  }
+
+  .navFooter {
+    justify-content: center;
+  }
+
+  .listaFooter {
+    justify-content: space-around;
+  }
+
+  .enlaceFooter {
+    font-size: 15px;
+  }
+
+  .parrafoFooter {
+    font-size: 10px;
+  }
+
+  .img__wsp {
+    height: 20px;
+    width: 20px;
+  }
+
+  .img__ig {
+    height: 35px;
+    width: 35px;
+  }
+
+  /* CUERPO INDEX */
+  .cuerpoPadre {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-family: "Roboto";
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .divpadre {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .encuadro {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(174, 182, 191);
+    text-decoration: none;
+    border: none;
+  }
+
+  .encuadro img {
+    height: 200px;
+    width: 350px;
+  }
+
+  .encuadro:hover {
+    box-shadow: none;
+    display: block;
+    transform: none;
+  }
+
+  .genero {
+    justify-content: space-between;
+  }
+
+  .img__genero {
+    height: 200px;
+    width: 728px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* HEADER */
+  .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav__menu {
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition: clip-path 1s ease-in-out;
+  }
+
+  .nav__item::after {
+    background: rgb(0, 0, 0);
+    clip-path: none;
+    transition: none;
+  }
+
+  .nav__item {
+    padding: 40px 0;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 900;
+    --clippy: none;
+  }
+
+  .nav__input:checked + .nav__menu {
+    clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
+  }
+
+  .nav__item__li {
+    color: rgb(23, 165, 137);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Roboto";
+    padding: 40px 0;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 900;
+  }
+
+  header ul ul {
+    display: block;
+  }
+
+  /* FOOTER */
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "logoF logoF" "navF navF" "sectionF sectionF";
+    background-color: rgb(0, 0, 0);
+  }
+
+  .logoFooter {
+    align-items: center;
+    padding-left: 3rem;
+  }
+
+  .navFooter {
+    justify-content: center;
+  }
+
+  .listaFooter {
+    justify-content: space-around;
+  }
+
+  .enlaceFooter {
+    font-size: 15px;
+  }
+
+  .parrafoFooter {
+    font-size: 10px;
+  }
+
+  .img__wsp {
+    height: 20px;
+    width: 20px;
+  }
+
+  .img__ig {
+    height: 35px;
+    width: 35px;
+  }
+
+  /* CUERPO INDEX */
+  .cuerpoPadre {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-family: "Roboto";
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .divpadre {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .encuadro {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(174, 182, 191);
+    text-decoration: none;
+    border: none;
+  }
+
+  .encuadro img {
+    height: 200px;
+    width: 350px;
+  }
+
+  .encuadro:hover {
+    box-shadow: none;
+    display: block;
+    transform: none;
+  }
+
+  .genero {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .img__genero {
+    height: 150px;
+    width: 440px;
+  }
+
+  /* PAGINA - PRODUCTOS */
+  .espacio {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "tienda" "tienda" "filtro";
+    margin: 30px;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+
+  .filtro__color {
+    width: 400px;
+  }
+
+  .filtro__talle {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11116,600 +11691,6 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important;
-  }
-}
-.navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.bg-dark {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-}
-
-/* CUERPO DE PAG */
-.cuerpoPadre {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-}
-
-.subtitle {
-  text-align: center;
-  font-family: "Roboto";
-  padding: 1rem 0;
-  font-size: 2rem;
-}
-
-.divpadre {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.encuadro {
-  border-radius: 5px;
-  text-align: center;
-  font-family: "Roboto";
-  font-weight: bold;
-  font-size: 30px;
-  background-color: rgb(174, 182, 191);
-  text-decoration: none;
-}
-.encuadro figure {
-  border-radius: 5px;
-  height: 300px;
-  width: 500px;
-  overflow: hidden;
-  transition: all 0.25s ease;
-}
-.encuadro figure img {
-  height: 100%;
-  width: 100%;
-  transition: all 0.25s ease;
-}
-
-.encuadro img:hover {
-  transform: scale(1.5);
-}
-
-.encuadro:hover p {
-  color: rgb(253, 254, 254);
-}
-
-.parrafo {
-  text-decoration: none;
-  list-style-type: none;
-  color: rgb(253, 254, 254);
-}
-
-/*section div div :hover img{
-    box-shadow: 0px 0px 1px 1px rgb(0,0,0);
-    color: rgb(0,0,0);
-    transition: 1s ease-in;
-}*/
-.titulogen {
-  text-align: center;
-  color: rgb(93, 109, 126);
-  font-family: "Roboto";
-}
-
-/* DIV GENERO */
-.generoHijo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 10px;
-}
-
-.img__genero {
-  width: auto;
-  height: auto;
-}
-
-.carouselPadre {
-  display: flex;
-  justify-content: center;
-  height: 400px;
-  width: auto;
-}
-
-.w-100 {
-  padding: 0 10%;
-  width: 80% !important;
-}
-
-.carousel-item {
-  width: 70% !important;
-  padding-left: 400px !important;
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(0,0,0)'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(0,0,0)'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
-}
-
-/* FIN CUERPO - INDEX */
-.generoHijo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 10px;
-}
-
-.img__genero {
-  width: auto;
-  height: auto;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "logoF navF" "sectionF sectionF";
-  background-color: rgb(0, 0, 0);
-}
-
-.logoFooter {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  align-items: center;
-  grid-area: logoF;
-  font-family: "Roboto";
-  color: rgb(23, 165, 137);
-  font-size: 1.5em;
-  font-weight: 900;
-}
-
-.logoFooter img {
-  height: 100px;
-  width: 100px;
-}
-
-.navFooter {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  grid-area: navF;
-}
-
-.listaFooter {
-  display: flex;
-  flex-direction: row;
-}
-
-.enlaceFooter {
-  text-decoration: none;
-  list-style-type: none;
-  padding: 0 20px;
-  font-family: "Roboto";
-  color: rgb(23, 165, 137);
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.sectionFooter {
-  grid-area: sectionF;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.img__wsp {
-  height: 30px;
-  width: 30px;
-  padding: 0 1rem;
-}
-
-.img__ig {
-  height: 45px;
-  width: 45px;
-  padding: 0 1rem;
-}
-
-.parrafoFooter {
-  color: rgb(23, 165, 137);
-  font-family: "Roboto";
-  padding: 0 8px;
-}
-
-.footerimg {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.footerimg__en {
-  display: flex;
-  flex-direction: row;
-  column-gap: 5px;
-}
-
-@media (max-width: 1024px) {
-  /*  */
-  .cuerpoPadre {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 20px;
-  }
-
-  .subtitle {
-    text-align: center;
-    font-family: "Roboto";
-    padding: 1rem 0;
-    font-size: 2rem;
-  }
-
-  .divpadre {
-    display: flex;
-    row-gap: 2rem;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .encuadro {
-    text-align: center;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 30px;
-    background-color: rgb(174, 182, 191);
-    text-decoration: none;
-    border: none;
-  }
-
-  .encuadro img {
-    height: 300px;
-    width: 450px;
-  }
-
-  .encuadro:hover {
-    box-shadow: none;
-    display: block;
-    transform: none;
-  }
-
-  .genero {
-    justify-content: space-between;
-  }
-
-  .logoFooter, .navFooter {
-    justify-content: space-around;
-  }
-
-  .img__genero {
-    height: 200px;
-    width: 980px;
-  }
-}
-@media (max-width: 768px) {
-  /* HEADER */
-  .nav__label {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav__menu {
-    position: absolute;
-    top: 80px;
-    bottom: 0;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 100%;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-    transition: clip-path 1s ease-in-out;
-  }
-
-  .nav__item::after {
-    background: rgb(0, 0, 0);
-    clip-path: none;
-    transition: none;
-  }
-
-  .nav__item {
-    padding: 40px 0;
-    padding-right: 30px;
-    font-weight: bold;
-    font-size: 900;
-    --clippy: none;
-  }
-
-  .nav__input:checked + .nav__menu {
-    clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
-  }
-
-  .nav__item__li {
-    color: rgb(23, 165, 137);
-    background-color: rgb(0, 0, 0);
-    text-decoration: none;
-    list-style-type: none;
-    font-family: "Roboto";
-    padding: 40px 0;
-    padding-right: 30px;
-    font-weight: bold;
-    font-size: 900;
-  }
-
-  header ul ul {
-    display: block;
-  }
-
-  /* FOOTER */
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "logoF logoF" "navF navF" "sectionF sectionF";
-    background-color: rgb(0, 0, 0);
-  }
-
-  .logoFooter {
-    justify-content: center;
-  }
-
-  .navFooter {
-    justify-content: center;
-  }
-
-  .listaFooter {
-    justify-content: space-around;
-  }
-
-  .enlaceFooter {
-    font-size: 15px;
-  }
-
-  .parrafoFooter {
-    font-size: 10px;
-  }
-
-  .img__wsp {
-    height: 20px;
-    width: 20px;
-  }
-
-  .img__ig {
-    height: 35px;
-    width: 35px;
-  }
-
-  /* CUERPO INDEX */
-  .cuerpoPadre {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 20px;
-  }
-
-  .subtitle {
-    text-align: center;
-    font-family: "Roboto";
-    padding: 1rem 0;
-    font-size: 2rem;
-  }
-
-  .divpadre {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .encuadro {
-    text-align: center;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 30px;
-    background-color: rgb(174, 182, 191);
-    text-decoration: none;
-    border: none;
-  }
-
-  .encuadro img {
-    height: 200px;
-    width: 350px;
-  }
-
-  .encuadro:hover {
-    box-shadow: none;
-    display: block;
-    transform: none;
-  }
-
-  .genero {
-    justify-content: space-between;
-  }
-
-  .img__genero {
-    height: 200px;
-    width: 728px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  /* HEADER */
-  .nav__label {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav__menu {
-    position: absolute;
-    top: 80px;
-    bottom: 0;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 100%;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-    transition: clip-path 1s ease-in-out;
-  }
-
-  .nav__item::after {
-    background: rgb(0, 0, 0);
-    clip-path: none;
-    transition: none;
-  }
-
-  .nav__item {
-    padding: 40px 0;
-    padding-right: 30px;
-    font-weight: bold;
-    font-size: 900;
-    --clippy: none;
-  }
-
-  .nav__input:checked + .nav__menu {
-    clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
-  }
-
-  .nav__item__li {
-    color: rgb(23, 165, 137);
-    background-color: rgb(0, 0, 0);
-    text-decoration: none;
-    list-style-type: none;
-    font-family: "Roboto";
-    padding: 40px 0;
-    padding-right: 30px;
-    font-weight: bold;
-    font-size: 900;
-  }
-
-  header ul ul {
-    display: block;
-  }
-
-  /* FOOTER */
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "logoF logoF" "navF navF" "sectionF sectionF";
-    background-color: rgb(0, 0, 0);
-  }
-
-  .logoFooter {
-    align-items: center;
-    padding-left: 3rem;
-  }
-
-  .navFooter {
-    justify-content: center;
-  }
-
-  .listaFooter {
-    justify-content: space-around;
-  }
-
-  .enlaceFooter {
-    font-size: 15px;
-  }
-
-  .parrafoFooter {
-    font-size: 10px;
-  }
-
-  .img__wsp {
-    height: 20px;
-    width: 20px;
-  }
-
-  .img__ig {
-    height: 35px;
-    width: 35px;
-  }
-
-  /* CUERPO INDEX */
-  .cuerpoPadre {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 20px;
-  }
-
-  .subtitle {
-    text-align: center;
-    font-family: "Roboto";
-    padding: 1rem 0;
-    font-size: 2rem;
-  }
-
-  .divpadre {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .encuadro {
-    text-align: center;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 30px;
-    background-color: rgb(174, 182, 191);
-    text-decoration: none;
-    border: none;
-  }
-
-  .encuadro img {
-    height: 200px;
-    width: 350px;
-  }
-
-  .encuadro:hover {
-    box-shadow: none;
-    display: block;
-    transform: none;
-  }
-
-  .genero {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .img__genero {
-    height: 150px;
-    width: 440px;
-  }
-
-  /* PAGINA - PRODUCTOS */
-  .espacio {
-    display: grid;
-    grid-template-columns: 400px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "tienda" "tienda" "filtro";
-    margin: 30px;
-  }
-
-  .subtitulo {
-    text-align: center;
-  }
-
-  .filtro__color {
-    width: 400px;
-  }
-
-  .filtro__talle {
-    display: flex;
-    justify-content: space-around;
   }
 }
 

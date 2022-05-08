@@ -47,27 +47,10 @@
     list-style-type: none;
     color: rgb( 253, 254, 254 );
 }
-/*section div div :hover img{
-    box-shadow: 0px 0px 1px 1px rgb(0,0,0);
-    color: rgb(0,0,0);
-    transition: 1s ease-in;
-}*/
 .titulogen {
     text-align: center;
     color: rgb( 93, 109, 126 );
     font-family: 'Roboto';
-}
-/* DIV GENERO */
-.generoHijo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 10px;
-}
-.img__genero {
-    width: auto;
-    height: auto;
 }
 .carouselPadre {
     display: flex;
