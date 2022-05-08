@@ -1,0 +1,76 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "logoF navF"
+    "sectionF sectionF"
+    ;
+    background-color: rgb(0,0,0);
+}
+.logoFooter {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    grid-area: logoF;
+    font-family: 'Roboto';
+    color: rgb(23, 165, 137);
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.logoFooter img {
+    height: 100px;
+    width: 100px;
+}
+.navFooter {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-area: navF;
+}
+.listaFooter {
+    display: flex;
+    flex-direction: row;
+}
+.enlaceFooter {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0 20px;
+    font-family: 'Roboto';
+    color: rgb(23, 165, 137);
+    font-weight: bold;
+    font-size: 20px;
+}
+.sectionFooter {
+    grid-area: sectionF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.img__wsp {
+    height: 30px; 
+    width: 30px;
+    padding: 0 1rem;
+}
+.img__ig{
+    height: 45px;
+    width: 45px;
+    padding: 0 1rem;
+}
+.parrafoFooter {
+    color: rgb(23, 165, 137); 
+    font-family: 'Roboto';
+    padding: 0 8px;
+}
+.footerimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerimg__en{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
