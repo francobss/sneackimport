@@ -11507,8 +11507,13 @@ textarea.form-control-lg {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.contenedor h1, .contenedor .h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
 }
 .contenedor form {
   width: 800px;
@@ -11518,6 +11523,7 @@ textarea.form-control-lg {
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.884);
 }
 .contenedor form div {
   display: flex;
@@ -11609,6 +11615,10 @@ textarea.form-control-lg {
   list-style-type: none;
   text-decoration: none;
   color: black;
+}
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  background-color: #000 !important;
 }
 
 /*# sourceMappingURL=destino.css.map */

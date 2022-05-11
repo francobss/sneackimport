@@ -1,9 +1,15 @@
+
 .contenedor{
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
     form {
         width: 800px;
         height: 500px;
@@ -12,6 +18,7 @@
         overflow: hidden;
         border-radius: 5px;
         box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+        background-color: rgba(255, 255, 255, 0.884);
         div{
             display: flex;
             justify-content: center;
