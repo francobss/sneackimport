@@ -674,7 +674,7 @@ header ul li:hover ul {
         text-align: center;
     }
     .filtro__color {
-        width: 400px;
+        width: 100px;
     }
     .filtro__talle {
         display: flex;
