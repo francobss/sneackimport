@@ -1,0 +1,10 @@
+@import "../scss/bootstrap-scss/bootstrap.scss";
+@import "component/mediaquery";
+@import "component/cuerpo-index";
+@import "component/secc-genero";
+@import "component/contacto";
+@import "component/paginas";
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    background-color: #000 !important;
+}

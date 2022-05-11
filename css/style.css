@@ -110,8 +110,7 @@ header ul li:hover ul {
     align-items: center;
 }
 .encuadro {
-    border: solid 3px rgb( 133, 146, 158);
-    border-style: groove;
+    border-radius: 5px;
     text-align: center;
     font-family: 'Roboto';
     font-weight: bold;
@@ -119,20 +118,43 @@ header ul li:hover ul {
     background-color: rgb(174, 182, 191);
     text-decoration: none;
 }
-.encuadro img {
+.encuadro figure{
+    border-radius: 5px;
     height: 300px;
     width: 500px;
+    overflow: hidden;
+    transition: all .25s ease;
 }
+.encuadro figure img{
+    height: 100%;
+    width: 100%;
+    transition: all .25s ease;
+}
+.encuadro img:hover{
+    transform: scale(1.5);
+}
+.encuadro:hover p{
+    color: rgb( 253, 254, 254 );
+}
+/*section div div a img:hover{
+    height: 400px;
+    width: 600px;
+}*/
+/*#transition:hover{
+    position: relative;
+    height: 400px;
+    width: 600px;
+}*/
 .parrafo {
     text-decoration: none;
     list-style-type: none;
     color: rgb( 253, 254, 254 );
 }
-section div :hover div{
+/*section div div :hover img{
     box-shadow: 0px 0px 1px 1px rgb(0,0,0);
     color: rgb(0,0,0);
-    transform: scale(1.1);
-}
+    transition: 1s ease-in;
+}*/
 .titulogen {
     text-align: center;
     color: rgb( 93, 109, 126 );
@@ -652,7 +674,7 @@ section div :hover div{
         text-align: center;
     }
     .filtro__color {
-        width: 400px;
+        width: 100px;
     }
     .filtro__talle {
         display: flex;

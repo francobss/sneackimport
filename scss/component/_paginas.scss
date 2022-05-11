@@ -1,0 +1,76 @@
+.espacio {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "filtro tienda tienda"
+    "filtro tienda tienda"
+    "filtro tienda tienda"
+    ;
+    margin: 30px;
+    .tienda {
+        display: flex;
+        flex-direction: column;
+        grid-area: tienda;
+        .tiendaCuerpo {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: start;
+            justify-content: center;
+        }
+        .cotitulo {
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto';
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .tiendaCuerpo{
+            .encuading {
+                display: inline-block;
+                width: 200px;
+                margin: 10px 10px 10px 10px;
+                padding: 5px 5px 30px 5px;
+                border: solid 3px rgb(0, 0, 0);
+                border-style: groove;
+                .text {
+                    font-family: 'Roboto';
+                    text-align: center;
+                }
+                .precio{
+                    font-family: 'Roboto';
+                    text-align: center;
+                    color: rgb(171, 178, 185);
+                }
+            }
+        }
+        .filtros {
+            display: flex;
+            flex-direction: column;
+            color: rgb(44, 62, 80);
+            grid-area: filtro;
+            padding-top: 1rem;
+            .separador {
+                padding: 25px 0 40px 0;
+            }
+            .subtitulo {
+                font-family: 'Roboto';
+                border-bottom: solid 1px rgb(44, 62, 80);
+                font-weight: bold;
+                font-size: 17px;
+            } 
+            .style {
+                font-family: 'Roboto';
+                color: rgb(44, 62, 80);
+                text-align: center;
+                text-decoration: none;
+                list-style-type: none;
+                a {
+                    list-style-type: none;
+                    text-decoration: none;
+                    color: black;
+                }
+            }  
+        }
+    }
+}
