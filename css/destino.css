@@ -11180,6 +11180,8 @@ textarea.form-control-lg {
 }
 .header .container .menu .menu-despl .menu-despl-item {
   list-style-type: none;
+  max-width: 100%;
+  float: left;
 }
 .header .container .menu .menu-despl .menu-despl-item .menu-despl-act {
   display: none;
