@@ -5,6 +5,9 @@
 @import "component/contacto";
 @import "component/paginas";
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
     background-color: #000 !important;
 }
