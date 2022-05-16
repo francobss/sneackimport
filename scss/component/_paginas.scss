@@ -44,33 +44,31 @@
                 }
             }
         }
-        .filtros {
-            display: flex;
-            flex-direction: column;
-            color: rgb(44, 62, 80);
-            grid-area: filtro;
-            padding-top: 1rem;
-            .separador {
-                padding: 25px 0 40px 0;
-            }
-            .subtitulo {
-                font-family: 'Roboto';
-                border-bottom: solid 1px rgb(44, 62, 80);
-                font-weight: bold;
-                font-size: 17px;
-            } 
-            .style {
-                font-family: 'Roboto';
-                color: rgb(44, 62, 80);
-                text-align: center;
-                text-decoration: none;
-                list-style-type: none;
-                a {
-                    list-style-type: none;
-                    text-decoration: none;
-                    color: black;
-                }
-            }  
+    }
+    .filtros {
+        display: flex;
+        flex-direction: column;
+        color: rgb(44, 62, 80);
+        grid-area: filtro;
+        padding-top: 1rem;
+        box-shadow: rgb(0, 0, 0);
+        .separador {
+            padding: 25px 0 40px 0;
         }
+        .subtitulo {
+            border-bottom: solid 1px rgb(44, 62, 80);
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        } 
+        .style {
+            color: rgb(44, 62, 80);
+            text-align: center;
+            text-align: left;
+            a {
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }  
     }
 }

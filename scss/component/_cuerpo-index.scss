@@ -14,58 +14,52 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.encuadro {
-    border-radius: 5px;
-    text-align: center;
-    font-family: 'Roboto';
-    font-weight: bold;
-    font-size: 30px;
-    background-color: rgb(174, 182, 191);
-    text-decoration: none;
-    figure{
+    .encuadro {
         border-radius: 5px;
-        height: 300px;
-        width: 500px;
-        overflow: hidden;
-        transition: all .25s ease;
-        img{
-            height: 100%;
-            width: 100%;
+        text-align: center;
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 30px;
+        background-color: rgb(174, 182, 191);
+        text-decoration: none;
+        figure{
+            border-radius: 5px;
+            height: 300px;
+            width: 500px;
+            overflow: hidden;
             transition: all .25s ease;
+            img{
+                height: 100%;
+                width: 100%;
+                transition: all .25s ease;
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+        .parrafo {
+            text-decoration: none;
+            list-style-type: none;
+            color: rgb(0, 0, 0);
         }
     }
 }
-.encuadro img:hover{
-    transform: scale(1.5);
-}
-.encuadro:hover p{
-    color: rgb( 253, 254, 254 );
-}
-.parrafo {
-    text-decoration: none;
-    list-style-type: none;
-    color: rgb( 253, 254, 254 );
-}
+
 .titulogen {
     text-align: center;
     color: rgb( 93, 109, 126 );
     font-family: 'Roboto';
 }
 .carouselPadre {
-    display: flex;
-    
+    display: flex;   
     justify-content: center;
     height: 400px;
     width: auto;
 }
-/*.w-100 {
-    padding: 0 10%;
-    width: 80% !important;
-}*/
 .w-100 {
     padding: 0 10%;
-    width: 50% !important;
+    width: 60% !important;
+    margin: 0 35%;
 }
 .carousel-item {
     width: 80% !important;

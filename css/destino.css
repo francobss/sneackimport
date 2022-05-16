@@ -228,11 +228,8 @@ sup {
 }
 
 a {
-  color: #0d6efd;
-  text-decoration: underline;
-}
-a:hover {
-  color: #0a58ca;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11146,29 +11143,27 @@ textarea.form-control-lg {
     text-decoration: none;
     border: none;
   }
+  .cuerpoPadre .divpadre .encuadro:hover {
+    box-shadow: none;
+    display: block;
+    transform: none;
+  }
   .cuerpoPadre .divpadre .encuadro figure {
     border-radius: 5px;
     height: 250px;
     width: 400px;
     overflow: hidden;
-    transition: all 0.25s ease;
   }
   .cuerpoPadre .divpadre .encuadro figure img {
     height: 100%;
     width: 100%;
-    transition: none;
+    transition: all 0.25s ease;
   }
   .cuerpoPadre .divpadre .encuadro figure img:hover {
-    transform: none;
+    transform: scale(1.2);
   }
   .cuerpoPadre .divpadre .encuadro p:hover {
-    color: rgb(253, 254, 254);
-  }
-
-  .encuadro:hover {
-    box-shadow: none;
-    display: block;
-    transform: none;
+    color: rgb(0, 0, 0);
   }
 
   .genero {
@@ -11223,14 +11218,17 @@ textarea.form-control-lg {
     height: 250px;
     width: 400px;
     overflow: hidden;
-    transition: all 0.25s ease;
   }
   .cuerpoPadre .divpadre .encuadro figure img {
     height: 100%;
     width: 100%;
+    transition: all 0.25s ease;
+  }
+  .cuerpoPadre .divpadre .encuadro figure img:hover {
+    transform: scale(1.2);
   }
   .cuerpoPadre .divpadre .encuadro p:hover {
-    color: rgb(253, 254, 254);
+    color: rgb(0, 0, 0);
   }
 
   .genero {
@@ -11301,14 +11299,17 @@ textarea.form-control-lg {
   }
 
   /* PAGINA - PRODUCTOS */
-  .espacio {
-    display: grid;
-    grid-template-columns: 400px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "tienda" "tienda" "filtro";
-    margin: 30px;
-  }
-
+  /*.espacio {
+      display: grid;
+      grid-template-columns: 400px;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+      "tienda"
+      "tienda"
+      "filtro"
+      ;
+      margin: 30px;
+  }*/
   .subtitulo {
     text-align: center;
   }
@@ -11336,7 +11337,7 @@ textarea.form-control-lg {
 @media (max-width: 767.98px) {
   .w-100 {
     padding: 0 10%;
-    width: 20% !important;
+    width: 30% !important;
     margin: 0 35%;
   }
 
@@ -11364,8 +11365,7 @@ textarea.form-control-lg {
   justify-content: space-around;
   align-items: center;
 }
-
-.encuadro {
+.divpadre .encuadro {
   border-radius: 5px;
   text-align: center;
   font-family: "Roboto";
@@ -11374,31 +11374,25 @@ textarea.form-control-lg {
   background-color: rgb(174, 182, 191);
   text-decoration: none;
 }
-.encuadro figure {
+.divpadre .encuadro figure {
   border-radius: 5px;
   height: 300px;
   width: 500px;
   overflow: hidden;
   transition: all 0.25s ease;
 }
-.encuadro figure img {
+.divpadre .encuadro figure img {
   height: 100%;
   width: 100%;
   transition: all 0.25s ease;
 }
-
-.encuadro img:hover {
+.divpadre .encuadro figure img:hover {
   transform: scale(1.5);
 }
-
-.encuadro:hover p {
-  color: rgb(253, 254, 254);
-}
-
-.parrafo {
+.divpadre .encuadro .parrafo {
   text-decoration: none;
   list-style-type: none;
-  color: rgb(253, 254, 254);
+  color: rgb(0, 0, 0);
 }
 
 .titulogen {
@@ -11414,13 +11408,10 @@ textarea.form-control-lg {
   width: auto;
 }
 
-/*.w-100 {
-    padding: 0 10%;
-    width: 80% !important;
-}*/
 .w-100 {
   padding: 0 10%;
-  width: 50% !important;
+  width: 60% !important;
+  margin: 0 35%;
 }
 
 .carousel-item {
@@ -11534,37 +11525,43 @@ textarea.form-control-lg {
   text-align: center;
   color: rgb(171, 178, 185);
 }
-.espacio .tienda .filtros {
+.espacio .filtros {
   display: flex;
   flex-direction: column;
   color: rgb(44, 62, 80);
   grid-area: filtro;
   padding-top: 1rem;
+  box-shadow: rgb(0, 0, 0);
 }
-.espacio .tienda .filtros .separador {
+.espacio .filtros .separador {
   padding: 25px 0 40px 0;
 }
-.espacio .tienda .filtros .subtitulo {
-  font-family: "Roboto";
+.espacio .filtros .subtitulo {
   border-bottom: solid 1px rgb(44, 62, 80);
   font-weight: bold;
-  font-size: 17px;
+  font-size: 20px;
+  text-align: center;
 }
-.espacio .tienda .filtros .style {
-  font-family: "Roboto";
+.espacio .filtros .style {
   color: rgb(44, 62, 80);
   text-align: center;
-  text-decoration: none;
-  list-style-type: none;
+  text-align: left;
 }
-.espacio .tienda .filtros .style a {
-  list-style-type: none;
+.espacio .filtros .style a {
   text-decoration: none;
-  color: black;
+  font-size: 20px;
 }
 
 * {
   font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+}
+
+body {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {

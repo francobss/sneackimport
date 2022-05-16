@@ -1,4 +1,3 @@
-//@media (max-width: 1024px) 
 @media (max-width: 1399.98px) {    
     .cuerpoPadre {
         display: flex;
@@ -24,33 +23,32 @@
                 background-color: rgb(174, 182, 191);
                 text-decoration: none;
                 border: none;
+                &:hover {
+                    box-shadow: none;
+                    display: block;
+                    transform: none;
+                }
                 figure{
                     border-radius: 5px;
                     height: 250px;
                     width: 400px;
                     overflow: hidden;
-                    transition: all .25s ease;
                     img{
                         height: 100%;
                         width: 100%;
-                        transition: none;
+                        transition: all .25s ease;
                         &:hover{
-                            transform: none;
+                            transform: scale(1.2);
                         }
                     }
                 }
                 p {
                     &:hover{
-                        color: rgb( 253, 254, 254 );
+                        color: rgb(0, 0, 0);
                     }
                 }
             }
         }
-    }
-    .encuadro:hover {
-        box-shadow: none;
-        display: block;
-        transform: none;
     }
     .genero {
         justify-content: space-between;
@@ -69,8 +67,6 @@
         padding-left: none !important;
     }
 }
-
-//@media (max-width: 768px) 
 @media (max-width: 1199.98px) {
     /* CUERPO INDEX */
     .cuerpoPadre {
@@ -101,15 +97,19 @@
                     height: 250px;
                     width: 400px;
                     overflow: hidden;
-                    transition: all .25s ease;
+                    
                     img{
                         height: 100%;
                         width: 100%;
+                        transition: all .25s ease;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
                     }
                 }
                 p {
                     &:hover{
-                        color: rgb( 253, 254, 254 );
+                        color: rgb(0, 0, 0);
                     }
                 }
             }
@@ -182,7 +182,7 @@
         }
     }
     /* PAGINA - PRODUCTOS */
-    .espacio {
+    /*.espacio {
         display: grid;
         grid-template-columns: 400px;
         grid-template-rows: repeat(2, 1fr);
@@ -192,7 +192,7 @@
         "filtro"
         ;
         margin: 30px;
-    }
+    }*/
     .subtitulo {
         text-align: center;
     }
@@ -216,7 +216,7 @@
 @media (max-width: 767.98px) {
     .w-100 {
         padding: 0 10%;
-        width: 20% !important;
+        width: 30% !important;
         margin: 0 35%;
     }
     .carousel-item {
