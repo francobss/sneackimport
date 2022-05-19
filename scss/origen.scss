@@ -1,9 +1,11 @@
 @import "../scss/bootstrap-scss/bootstrap.scss";
+@import "component/paginas";
+@import "component/contacto";
+@import "component/secc-genero";
 @import "component/mediaquery";
 @import "component/cuerpo-index";
-@import "component/secc-genero";
-@import "component/contacto";
-@import "component/paginas";
+
+
 
 * {
     font-family: 'Montserrat', sans-serif;

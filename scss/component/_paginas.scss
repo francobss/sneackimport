@@ -1,7 +1,7 @@
 .espacio {
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
     "filtro tienda tienda"
     "filtro tienda tienda"
@@ -17,15 +17,6 @@
             flex-wrap: wrap;
             flex-direction: start;
             justify-content: center;
-        }
-        .cotitulo {
-            display: flex;
-            justify-content: center;
-            font-family: 'Roboto';
-            font-weight: bold;
-            font-size: 2rem;
-        }
-        .tiendaCuerpo{
             .encuading {
                 display: inline-block;
                 width: 200px;
@@ -44,6 +35,13 @@
                 }
             }
         }
+        .cotitulo {
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto';
+            font-weight: bold;
+            font-size: 2rem;
+        }
     }
     .filtros {
         display: flex;
@@ -52,6 +50,10 @@
         grid-area: filtro;
         padding-top: 1rem;
         box-shadow: rgb(0, 0, 0);
+        .filtro__Despl {
+            display: flex;
+            justify-content: flex-start;
+        }
         .separador {
             padding: 25px 0 40px 0;
         }
@@ -69,6 +71,9 @@
                 text-decoration: none;
                 font-size: 20px;
             }
-        }  
+        }
+        .filtro__Despl, .filtro__DesplAct {
+            display: none;
+        }
     }
 }

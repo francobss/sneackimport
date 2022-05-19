@@ -42,6 +42,17 @@
                 </li>-->
                 <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Generos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../pages/hombre.html">Hombre</a></li>
+                        <li><a class="dropdown-item" href="../pages/mujer.html">Mujer</a></li>
+                        <li><a class="dropdown-item" href="../pages/niño.html">Niños</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Productos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -135,6 +146,11 @@
         </div>
         <!-- FILTROS -->
         <div class="filtros">
+            <label for="desplegable" class="filtro__Despl">
+                <img src="../img/filtro.svg" alt="">
+            </label>
+            <input type="checkbox" id="desplegable" class="filtro__DesplAct">
+            <div class="filtro__hijo">
                 <div class="separador">
                     <h3 class="subtitulo">Categoria de productos</h3>
                     <ul class="style">
@@ -180,8 +196,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
+    <!-- FIN FILTROS -->
     <!--FIN CUERPO-->
     <!--PIE PAGINA-->
     <div class="container">
