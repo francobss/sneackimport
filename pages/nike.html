@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/destino.css">
     <link rel="shortcut icon" href="../img/images.png">
+    <link rel="stylesheet" href="../css/menu.svg">
     <link rel="stylesheet" href="#">
     <title>Nike-Sneackers Import</title>
 </head>
@@ -36,6 +37,17 @@
                 <!-- <li class="nav-item"> 
                     <a class="nav-link" href="#">Link</a>
                 </li>-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Generos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../pages/hombre.html">Hombre</a></li>
+                        <li><a class="dropdown-item" href="../pages/mujer.html">Mujer</a></li>
+                        <li><a class="dropdown-item" href="../pages/niño.html">Niños</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Productos
@@ -109,50 +121,56 @@
                 </div>
             </div>
         </div>
-        <!--  -->
+        <!-- FILTROS -->
         <div class="filtros">
-            <div class="separador">
-                <h3 class="subtitulo">Categoria de productos</h3>
-                <ul class="style">
-                    <li><a href="../pages/productos.html" class="style">Zapatillas</a></li>
-                    <li><a href="../pages/nike.html" class="style">Nike</a></li>
-                    <li><a href="../pages/adidas.html" class="style">Adidas</a></li>
-                </ul>
-            </div>
-            <div class="separador">
-                <h4 class="subtitulo">Escoga cualquier color</h4><br>
-                <form style="display: block;">
-                    <select name="menu" class="filtro__color">
-                        <option value="0">...</option>
-                        <option value="blancas">blancas</option>
-                        <option value="negras">negras</option>
-                        <option value="marron">marron</option>
-                        <option value="gris">gris</option>
-                        <option value="gamuza">gamuza</option>
-                        <option value="multicolor">multicolor</option>
-                    </select>
-                </form>
-            </div>
-            <div>
-                <h5 class="subtitulo">Filtrar por talle</h5>
-                <div class="filtro__talle">
-                    <div>
-                        <input type="checkbox" name="talle" value="37"> 37
-                    </div><br>
-                    <div>
-                        <input type="checkbox" name="talle" value="38"> 38
-                    </div><br>
-                    <div>
-                        <input type="checkbox" name="talle" value="39"> 39
-                    </div><br>
-                    <div>
-                        <input type="checkbox" name="talle" value="40"> 40
-                    </div><br>
-                    <div>
-                        <input type="checkbox" name="talle" value="41"> 41
-                    </div><br>
-                    <div>
-                        <input type="checkbox" name="talle" value="42"> 42
+            <label for="desplegable" class="filtro__Despl">
+                <img src="../img/filtro.svg" alt="">
+            </label>
+            <input type="checkbox" id="desplegable" class="filtro__DesplAct">
+            <div class="filtro__hijo">
+                <div class="separador">
+                    <h3 class="subtitulo">Categoria de productos</h3>
+                    <ul class="style">
+                        <li><a href="../pages/productos.html" class="style">Zapatillas</a></li>
+                        <li><a href="../pages/nike.html" class="style">Nike</a></li>
+                        <li><a href="../pages/adidas.html" class="style">Adidas</a></li>
+                    </ul>
+                </div>
+                <div class="separador">
+                    <h3 class="subtitulo">Escoga cualquier color</h3><br>
+                    <form style="display: block;">
+                        <select name="menu" class="filtro__color">
+                            <option value="0">...</option>
+                            <option value="blancas">blancas</option>
+                            <option value="negras">negras</option>
+                            <option value="marron">marron</option>
+                            <option value="gris">gris</option>
+                            <option value="gamuza">gamuza</option>
+                            <option value="multicolor">multicolor</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    <h3 class="subtitulo">Filtrar por talle</h3>
+                    <div class="filtro__talle">
+                        <div>
+                            <input type="checkbox" name="talle" value="37"> 37
+                        </div><br>
+                        <div>
+                            <input type="checkbox" name="talle" value="38"> 38
+                        </div><br>
+                        <div>
+                            <input type="checkbox" name="talle" value="39"> 39
+                        </div><br>
+                        <div>
+                            <input type="checkbox" name="talle" value="40"> 40
+                        </div><br>
+                        <div>
+                            <input type="checkbox" name="talle" value="41"> 41
+                        </div><br>
+                        <div>
+                            <input type="checkbox" name="talle" value="42"> 42
+                        </div>
                     </div>
                 </div>
             </div>

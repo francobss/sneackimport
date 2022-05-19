@@ -1,11 +1,21 @@
 @import "../scss/bootstrap-scss/bootstrap.scss";
-@import "component/header";
+@import "component/paginas";
+@import "component/contacto";
+@import "component/secc-genero";
 @import "component/mediaquery";
 @import "component/cuerpo-index";
-@import "component/secc-genero";
-@import "component/contacto";
-@import "component/paginas";
 
-//.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
-//    background-color: #000 !important;
-//}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+}
+body  {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    background-color: #000 !important;
+}
