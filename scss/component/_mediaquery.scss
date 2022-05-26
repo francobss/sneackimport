@@ -326,6 +326,11 @@
             }
         }
     }
+    .cuerpo__nombre {
+        .nombre {
+            font-size: 35px;
+        }
+    }
 }
 @media (max-width: 575.98px) {
     .espacio {
@@ -425,6 +430,12 @@
                     }
                 }
             }
+        }
+    }
+    /* Paginas de zapatillas */
+    .cuerpo__nombre {
+        .nombre {
+            font-size: 25px;
         }
     }
 }

@@ -1,0 +1,65 @@
+.cuerpo__nombre {
+    .nombre {
+        font-size: 40px;
+        font-weight: bold;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .precio {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Roboto';
+        display: flex;
+        justify-content: center;
+        color: rgb(128, 139, 150);
+    }
+}
+.opciones_padre {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+    .opciones {
+        margin: 0 10px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        //border: 1px groove rgb(128, 139, 150);
+        //border-radius: 5px;
+        gap: 10px;
+        .opciones__titulo {
+            font-size: 20px;
+            padding: 0 10px;
+            color: rgb(128, 139, 150);
+        }
+        .opciones__talle {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .opciones__buscador {
+                width: 200px;
+            }
+        }
+        .opciones__cantidad {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .carrito {
+        .carrito__boton {
+            width: 100px;
+            border-radius: 5px;
+            border: none;
+            &:hover{
+                color: rgb(255, 255, 255);
+                background-color: rgb(0,0,0);
+                transition: ease-out;
+            }
+        }
+    }
+}
+.container {
+    bottom: 0;
+}
