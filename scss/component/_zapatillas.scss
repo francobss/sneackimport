@@ -1,3 +1,9 @@
+.img-c{
+    width: 80% !important;
+    height: 400px !important;
+    padding: 0 10%;
+    margin: 20px 20%; 
+}
 .cuerpo__nombre {
     .nombre {
         font-size: 40px;
@@ -25,8 +31,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        //border: 1px groove rgb(128, 139, 150);
-        //border-radius: 5px;
         gap: 10px;
         .opciones__titulo {
             font-size: 20px;
@@ -58,6 +62,21 @@
                 transition: ease-out;
             }
         }
+    }
+}
+.tabla {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .tabla__p {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    .tabla__img {
+        width: 80%;
+        height: auto;
     }
 }
 .container {

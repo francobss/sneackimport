@@ -205,6 +205,12 @@
         width: none !important;
         padding-left: none !important;
     }
+    .img-c{
+        width: 80% !important;
+        height: 400px !important;
+        padding: 0 10%;
+        margin: 20px 20%; 
+    }
 }
 @media (max-width: 767.98px) {
     .cuerpoPadre {
@@ -331,6 +337,12 @@
             font-size: 35px;
         }
     }
+    .img-c{
+        width: 100% !important;
+        height: 400px !important;
+        padding: 0 10%;
+        margin: 20px 15%; 
+    }
 }
 @media (max-width: 575.98px) {
     .espacio {
@@ -437,5 +449,11 @@
         .nombre {
             font-size: 25px;
         }
+    }
+    .img-c{
+        width: 100% !important;
+        height: 400px !important;
+        padding: 0 10%;
+        margin: 20px 15%; 
     }
 }

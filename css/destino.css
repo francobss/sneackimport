@@ -11264,6 +11264,13 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+.img-c {
+  width: 80% !important;
+  height: 400px !important;
+  padding: 0 10%;
+  margin: 20px 20%;
+}
+
 .cuerpo__nombre .nombre {
   font-size: 40px;
   font-weight: bold;
@@ -11320,6 +11327,22 @@ textarea.form-control-lg {
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   transition: ease-out;
+}
+
+.tabla {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tabla .tabla__p {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.tabla .tabla__img {
+  width: 80%;
+  height: auto;
 }
 
 .container {
@@ -11531,6 +11554,13 @@ textarea.form-control-lg {
     width: none !important;
     padding-left: none !important;
   }
+
+  .img-c {
+    width: 80% !important;
+    height: 400px !important;
+    padding: 0 10%;
+    margin: 20px 20%;
+  }
 }
 @media (max-width: 767.98px) {
   .cuerpoPadre .genero .generoHijo {
@@ -11647,6 +11677,13 @@ textarea.form-control-lg {
   .cuerpo__nombre .nombre {
     font-size: 35px;
   }
+
+  .img-c {
+    width: 100% !important;
+    height: 400px !important;
+    padding: 0 10%;
+    margin: 20px 15%;
+  }
 }
 @media (max-width: 575.98px) {
   .espacio {
@@ -11742,6 +11779,13 @@ textarea.form-control-lg {
   /* Paginas de zapatillas */
   .cuerpo__nombre .nombre {
     font-size: 25px;
+  }
+
+  .img-c {
+    width: 100% !important;
+    height: 400px !important;
+    padding: 0 10%;
+    margin: 20px 15%;
   }
 }
 /* CUERPO DE PAG */
