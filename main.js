@@ -1,13 +1,8 @@
 
-
 function descuento(a){
     res = a * 10 / 100
     return res
 }
-/*const descuento = (can) => {
-    res = can * 10 / 100
-    return res
-}*/
 
 class producto {
     constructor(id, nombre, precio, cat, stock){
